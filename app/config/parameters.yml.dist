@@ -1,0 +1,15 @@
+parameters:
+    database_host: database8016
+    database_port: ~
+    database_name: ds_topics
+    database_user: ds_topics
+    database_password: ds_topics
+
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: ~
+    mailer_password: ~
+
+    secret: ThisTokenIsNotSoSecretChangeIt
+
+    cors_allow_origin: http://localhost
