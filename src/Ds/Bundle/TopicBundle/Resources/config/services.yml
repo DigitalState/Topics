@@ -1,0 +1,3 @@
+services:
+    ds_topic.service.topic:
+        class: Ds\Bundle\TopicBundle\Service\TopicService

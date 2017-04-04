@@ -1,0 +1,7 @@
+services:
+    ds_topic.serializer.context_builder.topic:
+        decorates: api_platform.serializer.context_builder
+        class: Ds\Bundle\TopicBundle\Serializer\ContextBuilder\TopicContextBuilder
+        arguments:
+            - "@ds_topic.serializer.context_builder.topic.inner"
+            - "@security.authorization_checker"
