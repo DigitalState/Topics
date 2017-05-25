@@ -70,4 +70,13 @@ class Topic implements Uuidentifiable
      * @ORM\Column(name="updated_at", type="datetime")
      */
     protected $updatedAt; use Accessor\UpdatedAt;
+
+    /**
+     * @var string
+     *
+     * @Serializer\Groups({"topic_output", "topic_input"})
+     * @ORM\Column(name="title", type="string")
+     * @Assert\NotBlank
+     */
+    protected $title; use Accessor\Title;
 }
